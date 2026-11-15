@@ -46,8 +46,8 @@ public final class BaseHechos {
         Humano casiopea = new Humano("Casiopea", true, true);
         Humano andromeda = new Humano("Andromeda", true, true);
         Humano minos = new Humano("Minos", true, true);
-        Humano dedalo = new Humano("Dedalo", false, true);
-        Humano icaro = new Humano("Icaro", false, true);
+        Humano dedalo = new Humano("Dedalo", true, true);
+        Humano icaro = new Humano("Icaro", true, true);
         Humano danae = new Humano("Danae", true, true);
         
         Semidios perseo = new Semidios("Perseo", true, true);
@@ -74,7 +74,9 @@ public final class BaseHechos {
         Capacidad vuelo = new Capacidad("Vuelo");
         Capacidad espejo = new Capacidad("Espejo");
         Capacidad fuerza = new Capacidad("Fuerza");
-        agregar(hechos, invisibilidad, vuelo, espejo, fuerza);
+        Capacidad arma = new Capacidad("Arma");
+        Capacidad petrificar = new Capacidad("Petrificar");
+        agregar(hechos, invisibilidad, vuelo, espejo, fuerza, arma, petrificar);
 
         Objeto brida = new Objeto("Brida de Oro");
         Objeto escudoBronce = new Objeto("Escudo de Bronce");
@@ -125,9 +127,16 @@ public final class BaseHechos {
         hechos.add(new TieneObjeto(minotauro, cuerno));
         hechos.add(new TieneObjeto(dedalo, cera));
         hechos.add(new TieneObjeto(dedalo, plumas));
+        hechos.add(new TieneObjeto(medusa, cabezaMedusa));
+        hechos.add(new TieneObjeto(ceto, cabezaCeto));
+        hechos.add(new TieneObjeto(minotauro, cabezaMinotauro));
         
         // Capacidades que ya existen por conocimiento inicial
         hechos.add(new TieneCapacidad(heracles, fuerza));
+        hechos.add(new OtorgaCapacidad(hoz, arma));
+        hechos.add(new OtorgaCapacidad(espada, arma));
+        hechos.add(new OtorgaCapacidad(cuerno, arma));
+        hechos.add(new OtorgaCapacidad(cabezaMedusa, petrificar));
 
         // Relaciones de parentesco y favor/enojo
         hechos.add(new Parentesco(casiopea, andromeda));
@@ -135,6 +144,11 @@ public final class BaseHechos {
         hechos.add(new Parentesco(danae, perseo));
         hechos.add(new TieneFavor(heracles, zeus));
 
+        
+        
+
+        
+        
         return hechos;
     }
 

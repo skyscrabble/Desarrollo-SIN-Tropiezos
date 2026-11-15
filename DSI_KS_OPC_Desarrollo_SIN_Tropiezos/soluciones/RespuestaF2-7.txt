@@ -1,13 +1,36 @@
 No, Perseo no puede obtener Cabeza de Minotauro con las condiciones iniciales
 Sucesos que si se producen:
+Teseo obtiene la capacidad Arma debido a tener Espada de Teseo.
 Heracles obtiene Yelmo de Hades debido a tener el favor de Hades.
+Heracles obtiene la capacidad Invisibilidad debido a tener Yelmo de Hades.
 Heracles obtiene Brida de Oro debido a tener el favor de Hefesto.
 Heracles obtiene Hoz de Acero debido a tener el favor de Hermes.
+Heracles obtiene la capacidad Arma debido a tener Hoz de Acero.
 Heracles obtiene Escudo de Bronce debido a tener el favor de Atenea.
-Poseidon, enojado con Casiopea, envia al monstruo Ceto a apresar a Andromeda.
+Ceto queda libre debido al enojo de Poseidon hacia Casiopea.
+Andromeda queda presa debido a estar Ceto libre.
 Teseo localiza a las Grayas debido a tener el favor de Hermes y Atenea.
 Heracles localiza a las Grayas debido a tener el favor de Hermes y Atenea.
 Perseo localiza a las Grayas debido a tener el favor de Hermes y Atenea.
+Heracles roba el Ojo de las Grayas debido a tener Invisibilidad y las Grayas localizadas.
+Heracles localiza a las Ninfas debido a intercambiar el Ojo de las Grayas con las Grayas.
+Heracles obtiene Zurron Magico debido a tener a las Ninfas localizadas.
+Heracles obtiene Sandalias Aladas debido a tener a las Ninfas localizadas.
+Heracles obtiene la capacidad Vuelo debido a tener Sandalias Aladas.
+Heracles obtiene Escudo Espejo debido a tener el favor de Hefesto y el Escudo de Bronce.
+Heracles obtiene la capacidad Espejo debido a tener Escudo Espejo.
+Heracles mata a Medusa debido a tener Vuelo, Invisibilidad, Espejo y Arma.
+Heracles obtiene Cabeza de Medusa debido a matar a Medusa.
+Heracles obtiene la capacidad Petrificar debido a tener Cabeza de Medusa.
+Heracles mata a Ceto debido a tener la capacidad Petrificar.
+Heracles obtiene Cabeza de Ceto debido a matar a Ceto.
+Heracles libera a Andromeda debido a matar a Ceto.
+Teseo se adentra en el laberinto y mata al Minotauro.
+Teseo obtiene Cuerno del Minotauro debido a matar a Minotauro.
+Teseo obtiene la capacidad Fuerza debido a tener Cuerno del Minotauro.
+Teseo obtiene la capacidad Arma debido a tener Cuerno del Minotauro.
+Teseo obtiene Cabeza de Minotauro debido a matar a Minotauro.
+Minos, enfadado por la muerte del Minotauro, encierra a Dedalo y a Icaro en el laberinto.
 Dedalo fabrica las Alas de Dedalo y las Alas de Icaro con Cera de Abejas y Plumas de Aves.
 Icaro intenta escapar volando pero se acerca demasiado al sol y muere; las Alas de Icaro quedan donde cae.
 Dedalo utiliza sus alas para escapar del laberinto.

@@ -1,5 +1,4 @@
-No, Heracles no puede obtener la capacidad Vuelo con las condiciones iniciales
-Sucesos que si se producen:
-Dedalo fabrica las Alas de Dedalo y las Alas de Icaro con Cera de Abejas y Plumas de Aves.
-Icaro intenta escapar volando pero se acerca demasiado al sol y muere; las Alas de Icaro quedan donde cae.
-Dedalo utiliza sus alas para escapar del laberinto.
+Si, Heracles puede obtener la capacidad Vuelo debido a que:
+Heracles obtiene la capacidad Vuelo debido a tener Alas de Icaro.
+Teseo obtiene la capacidad Arma debido a tener Espada de Teseo.
+Mision cumplida: Heracles obtiene la capacidad Vuelo

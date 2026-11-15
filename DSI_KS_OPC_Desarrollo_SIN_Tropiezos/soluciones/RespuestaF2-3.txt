@@ -1,11 +1,25 @@
-No, Teseo no puede liberar a Andromeda con las condiciones iniciales
-Sucesos que si se producen:
+Si, Teseo puede liberar a Andromeda debido a que:
+Teseo obtiene la capacidad Arma debido a tener Espada de Teseo.
 Teseo obtiene Yelmo de Hades debido a tener el favor de Hades.
+Teseo obtiene la capacidad Invisibilidad debido a tener Yelmo de Hades.
 Teseo obtiene Brida de Oro debido a tener el favor de Hefesto.
 Teseo obtiene Hoz de Acero debido a tener el favor de Hermes.
+Teseo obtiene la capacidad Arma debido a tener Hoz de Acero.
 Teseo obtiene Escudo de Bronce debido a tener el favor de Atenea.
-Poseidon, enojado con Casiopea, envia al monstruo Ceto a apresar a Andromeda.
+Ceto queda libre debido al enojo de Poseidon hacia Casiopea.
+Andromeda queda presa debido a estar Ceto libre.
 Teseo localiza a las Grayas debido a tener el favor de Hermes y Atenea.
-Dedalo fabrica las Alas de Dedalo y las Alas de Icaro con Cera de Abejas y Plumas de Aves.
-Icaro intenta escapar volando pero se acerca demasiado al sol y muere; las Alas de Icaro quedan donde cae.
-Dedalo utiliza sus alas para escapar del laberinto.
+Teseo roba el Ojo de las Grayas debido a tener Invisibilidad y las Grayas localizadas.
+Teseo localiza a las Ninfas debido a intercambiar el Ojo de las Grayas con las Grayas.
+Teseo obtiene Zurron Magico debido a tener a las Ninfas localizadas.
+Teseo obtiene Sandalias Aladas debido a tener a las Ninfas localizadas.
+Teseo obtiene la capacidad Vuelo debido a tener Sandalias Aladas.
+Teseo obtiene Escudo Espejo debido a tener el favor de Hefesto y el Escudo de Bronce.
+Teseo obtiene la capacidad Espejo debido a tener Escudo Espejo.
+Teseo mata a Medusa debido a tener Vuelo, Invisibilidad, Espejo y Arma.
+Teseo obtiene Cabeza de Medusa debido a matar a Medusa.
+Teseo obtiene la capacidad Petrificar debido a tener Cabeza de Medusa.
+Teseo mata a Ceto debido a tener la capacidad Petrificar.
+Teseo obtiene Cabeza de Ceto debido a matar a Ceto.
+Teseo libera a Andromeda debido a matar a Ceto.
+Mision cumplida: Teseo libera a Andromeda

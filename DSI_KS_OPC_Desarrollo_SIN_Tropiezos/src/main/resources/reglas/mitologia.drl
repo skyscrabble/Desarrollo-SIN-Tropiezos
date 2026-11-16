@@ -52,6 +52,7 @@ rule "Un dios entrega sus objetos a quien tiene su favor"
     no-loop true
     when
         TieneFavor( $p : personaje, $d : dios )
+        Personaje( this == $p, estado_vida == true, estado_libertad == true )
         $t : TieneObjeto( personaje.nombre == $d.nombre, $o : objeto )
         not TieneObjeto( personaje.nombre == $p.nombre, objeto.nombre == $o.nombre )
     then
@@ -63,9 +64,8 @@ end
 rule "Poseer un objeto otorga su capacidad"
     salience 80
     when
-        $p : Personaje()
+        TieneObjeto( $p : personaje, $o : objeto )
         eval( $p instanceof Heroe || $p instanceof Semidios )
-        TieneObjeto( personaje == $p, $o : objeto )
         OtorgaCapacidad( objeto == $o, $c : capacidad )
     then
         insertLogical( new TieneCapacidad( $p, $c ) );
@@ -75,7 +75,7 @@ end
 
 rule "Mision OBJETO alcanzada"
     no-loop true
-    salience 0
+    salience -10
     when
         $m : Mision( tipo == Mision.Tipo.OBJETO, $h : sujeto,
                      $o : objetivoObjeto, alcanzada == false )
@@ -87,7 +87,7 @@ end
 
 rule "Mision CAPACIDAD alcanzada"
     no-loop true
-    salience 0
+    salience -10
     when
         $m : Mision( tipo == Mision.Tipo.CAPACIDAD, $h : sujeto,
                      $c : objetivoCapacidad, alcanzada == false )
@@ -99,7 +99,7 @@ end
 
 rule "Mision MATAR alcanzada"
     no-loop true
-    salience 0
+    salience -10
     when
         $m : Mision(tipo == Mision.Tipo.MATAR, alcanzada == false, 
                     $sujeto : sujeto, $objetivo : objetivoPersonaje)
@@ -115,7 +115,7 @@ end
 
 rule "Mision APRESAR alcanzada"
     no-loop true
-    salience 0
+    salience -10
     when
         $m : Mision(tipo == Mision.Tipo.APRESAR, alcanzada == false, 
                     $sujeto : sujeto, $objetivo : objetivoPersonaje)
@@ -131,7 +131,7 @@ end
 
 rule "Mision LIBERAR alcanzada"
     no-loop true
-    salience 0
+    salience -10
     when
         $m : Mision(tipo == Mision.Tipo.LIBERAR, alcanzada == false, 
                     $sujeto : sujeto, $objetivo : objetivoPersonaje)
@@ -453,6 +453,44 @@ rule "Minos encierra a Dedalo e Icaro cuando muere el Minotauro"
         insert( $a2 );
         insert( new AccionDestinoPersonaje( $a2, $icaro ) );
         salida.add( "Minos, enfadado por la muerte del Minotauro, encierra a Dedalo y a Icaro en el laberinto." );
+end
+
+
+rule "Un heroe recoge las alas caidas de Icaro"
+    no-loop true
+    when
+        $heroe : Personaje( estado_vida == true, estado_libertad == true )
+        eval( $heroe instanceof Heroe || $heroe instanceof Semidios )
+        $m : Mision( sujeto == $heroe, alcanzada == false )
+        $vuelo : Capacidad( nombre == "Vuelo" )
+        not TieneCapacidad( personaje == $heroe, capacidad == $vuelo )
+        Personaje( nombre == "Icaro", estado_vida == false )
+        $alas : Objeto( nombre == "Alas de Icaro" )
+        not TieneObjeto( objeto == $alas )
+    then
+        insert( new TieneObjeto( $heroe, $alas ) );
+        salida.add( $heroe.nombre + " recoge las Alas de Icaro, caidas junto al cuerpo de Icaro." );
+end
+
+
+rule "Un heroe mata a quien tiene las cabezas que busca"
+    no-loop true
+    when
+        $a : Personaje( estado_vida == true, estado_libertad == true )
+        Mision( tipo == Mision.Tipo.OBJETO, sujeto == $a )
+        $arma : Capacidad( nombre == "Arma" )
+        TieneCapacidad( personaje == $a, capacidad == $arma )
+        $b : Personaje( this != $a, estado_vida == true )
+        eval( $b instanceof Heroe || $b instanceof Semidios )
+        $o : Objeto( nombre matches "Cabeza de.*" )
+        TieneObjeto( personaje == $b, objeto == $o )
+    then
+        modify( $b ) { setEstado_vida( false ) }
+        Matar $m = new Matar();
+        $m.setSujeto( $a );
+        insert( $m );
+        insert( new AccionDestinoPersonaje( $m, $b ) );
+        salida.add( $a.nombre + " mata a " + $b.nombre + " para quedarse con sus cabezas." );
 end
 
                  

@@ -6,9 +6,10 @@ Ariadna obtiene la capacidad Fuerza debido a tener Cuerno del Minotauro.
 Ariadna obtiene la capacidad Arma debido a tener Cuerno del Minotauro.
 Ariadna obtiene Cabeza de Minotauro debido a matar a Minotauro.
 Ariadna libera a Teseo debido a matar a Minotauro.
-Teseo obtiene la capacidad Arma debido a tener Espada de Teseo.
-Mision cumplida: Ariadna libera a Teseo
 Minos, enfadado por la muerte del Minotauro, encierra a Dedalo y a Icaro en el laberinto.
 Dedalo fabrica las Alas de Dedalo y las Alas de Icaro con Cera de Abejas y Plumas de Aves.
 Icaro intenta escapar volando pero se acerca demasiado al sol y muere; las Alas de Icaro quedan donde cae.
 Dedalo utiliza sus alas para escapar del laberinto.
+Ariadna recoge las Alas de Icaro, caidas junto al cuerpo de Icaro.
+Ariadna obtiene la capacidad Vuelo debido a tener Alas de Icaro.
+Mision cumplida: Ariadna libera a Teseo

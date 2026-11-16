@@ -1,11 +1,11 @@
 Si, Teseo puede liberar a Andromeda debido a que:
 Teseo obtiene la capacidad Arma debido a tener Espada de Teseo.
-Teseo obtiene Yelmo de Hades debido a tener el favor de Hades.
-Teseo obtiene la capacidad Invisibilidad debido a tener Yelmo de Hades.
-Teseo obtiene Brida de Oro debido a tener el favor de Hefesto.
+Teseo obtiene Escudo de Bronce debido a tener el favor de Atenea.
 Teseo obtiene Hoz de Acero debido a tener el favor de Hermes.
 Teseo obtiene la capacidad Arma debido a tener Hoz de Acero.
-Teseo obtiene Escudo de Bronce debido a tener el favor de Atenea.
+Teseo obtiene Brida de Oro debido a tener el favor de Hefesto.
+Teseo obtiene Yelmo de Hades debido a tener el favor de Hades.
+Teseo obtiene la capacidad Invisibilidad debido a tener Yelmo de Hades.
 Ceto queda libre debido al enojo de Poseidon hacia Casiopea.
 Andromeda queda presa debido a estar Ceto libre.
 Teseo localiza a las Grayas debido a tener el favor de Hermes y Atenea.

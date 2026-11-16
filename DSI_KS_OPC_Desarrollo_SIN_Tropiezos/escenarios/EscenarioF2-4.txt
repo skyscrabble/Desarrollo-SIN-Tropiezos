@@ -1,6 +1,6 @@
-# Perseo obtiene alas alternativas en vez de las Sandalias Aladas.
+# Perseo consigue el vuelo con las Alas de Icaro en lugar de las Sandalias Aladas
 PREGUNTA LIBERAR Perseo Andromeda
-POSEE Perseo Alas_de_Icaro
+NO_POSEE Ninfas Sandalias_Aladas
 FAVOR Perseo Atenea
 FAVOR Perseo Hermes
 FAVOR Perseo Hefesto

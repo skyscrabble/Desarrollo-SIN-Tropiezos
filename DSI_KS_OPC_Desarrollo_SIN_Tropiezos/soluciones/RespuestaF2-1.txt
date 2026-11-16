@@ -1,11 +1,11 @@
 Si, Perseo puede liberar a Andromeda debido a que:
 Teseo obtiene la capacidad Arma debido a tener Espada de Teseo.
-Perseo obtiene Yelmo de Hades debido a tener el favor de Hades.
-Perseo obtiene la capacidad Invisibilidad debido a tener Yelmo de Hades.
-Perseo obtiene Brida de Oro debido a tener el favor de Hefesto.
+Perseo obtiene Escudo de Bronce debido a tener el favor de Atenea.
 Perseo obtiene Hoz de Acero debido a tener el favor de Hermes.
 Perseo obtiene la capacidad Arma debido a tener Hoz de Acero.
-Perseo obtiene Escudo de Bronce debido a tener el favor de Atenea.
+Perseo obtiene Brida de Oro debido a tener el favor de Hefesto.
+Perseo obtiene Yelmo de Hades debido a tener el favor de Hades.
+Perseo obtiene la capacidad Invisibilidad debido a tener Yelmo de Hades.
 Ceto queda libre debido al enojo de Poseidon hacia Casiopea.
 Andromeda queda presa debido a estar Ceto libre.
 Perseo localiza a las Grayas debido a tener el favor de Hermes y Atenea.

@@ -1,5 +1,8 @@
 Si, Teseo puede matar a Minotauro debido a que:
 Teseo obtiene la capacidad Arma debido a tener Espada de Teseo.
+Minos, enojado con Teseo, lo envia al laberinto.
+Ariadna entrega el Hilo de Ariadna a Teseo, enviado al laberinto.
+Teseo recorre el laberinto guiado por el Hilo de Ariadna y localiza al Minotauro.
 Teseo se adentra en el laberinto y mata al Minotauro.
 Teseo obtiene Cuerno del Minotauro debido a matar a Minotauro.
 Teseo obtiene la capacidad Fuerza debido a tener Cuerno del Minotauro.

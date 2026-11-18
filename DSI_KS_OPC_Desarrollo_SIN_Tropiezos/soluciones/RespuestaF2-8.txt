@@ -1,4 +1,23 @@
-Si, Heracles puede obtener la capacidad Vuelo debido a que:
-Heracles obtiene la capacidad Vuelo debido a tener Alas de Icaro.
+Si, Teseo puede liberar a Andromeda debido a que:
 Teseo obtiene la capacidad Arma debido a tener Espada de Teseo.
-Mision cumplida: Heracles obtiene la capacidad Vuelo
+Minos, enojado con Teseo, lo envia al laberinto.
+Ariadna entrega el Hilo de Ariadna a Teseo, enviado al laberinto.
+Minos, enojado con Casiopea, lo envia al laberinto.
+El Minotauro apresa a Casiopea por entrar en el laberinto sin el Hilo de Ariadna.
+Minos envia tambien al laberinto a Andromeda, hijo de Casiopea.
+El Minotauro apresa a Andromeda por entrar en el laberinto sin el Hilo de Ariadna.
+Teseo recorre el laberinto guiado por el Hilo de Ariadna y localiza al Minotauro.
+Teseo se adentra en el laberinto y mata al Minotauro.
+Teseo obtiene Cuerno del Minotauro debido a matar a Minotauro.
+Teseo obtiene la capacidad Fuerza debido a tener Cuerno del Minotauro.
+Teseo obtiene la capacidad Arma debido a tener Cuerno del Minotauro.
+Teseo obtiene Cabeza de Minotauro debido a matar a Minotauro.
+Teseo libera a Casiopea debido a matar a Minotauro.
+Teseo libera a Andromeda debido a matar a Minotauro.
+Minos, enfadado por la muerte del Minotauro, encierra a Dedalo y a Icaro en el laberinto.
+Dedalo fabrica las Alas de Dedalo y las Alas de Icaro con Cera de Abejas y Plumas de Aves.
+Icaro intenta escapar volando pero se acerca demasiado al sol y muere; las Alas de Icaro quedan donde cae.
+Dedalo utiliza sus alas para escapar del laberinto.
+Teseo recoge las Alas de Icaro, caidas junto al cuerpo de Icaro.
+Teseo obtiene la capacidad Vuelo debido a tener Alas de Icaro.
+Mision cumplida: Teseo libera a Andromeda

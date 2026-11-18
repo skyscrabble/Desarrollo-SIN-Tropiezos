@@ -1,4 +1,3 @@
-# Teseo mata al Minotauro. La configuracion debe ampliarse con las reglas de escape de Icaro y Dedalo.
+# Teseo es enviado al laberinto por Minos y mata al Minotauro
 PREGUNTA MATAR Teseo Minotauro
-POSEE Teseo Hilo_de_Ariadna
-LOCALIZA Teseo Minotauro
+ENOJO Teseo Minos

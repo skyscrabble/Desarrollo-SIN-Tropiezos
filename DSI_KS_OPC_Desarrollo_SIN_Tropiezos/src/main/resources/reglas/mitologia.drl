@@ -43,7 +43,7 @@ end
 rule "Informacion inicial: mision"
     agenda-group "Informacion Inicial"
     when
-        $m : Mision()
+        $m : Mision( sujeto != null )
     then
         System.out.println( "Mision: " + $m.tipo + " sujeto=" + $m.sujeto.nombre );
 end
@@ -53,8 +53,8 @@ rule "Un dios entrega sus objetos a quien tiene su favor"
     when
         TieneFavor( $p : personaje, $d : dios )
         Personaje( this == $p, estado_vida == true, estado_libertad == true )
-        $t : TieneObjeto( personaje.nombre == $d.nombre, $o : objeto )
-        not TieneObjeto( personaje.nombre == $p.nombre, objeto.nombre == $o.nombre )
+        $t : TieneObjeto( personaje == $d, $o : objeto )
+        not TieneObjeto( personaje == $p, objeto == $o )
     then
         delete( $t );
         insert( new TieneObjeto( $p, $o ) );
@@ -297,6 +297,7 @@ rule "Hefesto pule el escudo de bronce"
     when
         $hefesto : Dios( nombre == "Hefesto" )
         TieneFavor( $p : personaje, dios == $hefesto )
+        Personaje( this == $p, estado_vida == true, estado_libertad == true )
         $escB : Objeto( nombre == "Escudo de Bronce" )
         $escE : Objeto( nombre == "Escudo Espejo" )
         $t : TieneObjeto( personaje == $p, objeto == $escB )
@@ -493,4 +494,80 @@ rule "Un heroe mata a quien tiene las cabezas que busca"
         salida.add( $a.nombre + " mata a " + $b.nombre + " para quedarse con sus cabezas." );
 end
 
+rule "Minos envia al laberinto a quien lo enoja"
+    no-loop true
+    when
+        $minos : Humano( nombre == "Minos" )
+        $lab : Ubicacion( nombre == "Laberinto del Minotauro" )
+        TieneEnojo( $p : personaje, personajeEnojado == $minos )
+        $v : Personaje( this == $p, estado_vida == true, ubicacion_actual != $lab )
+    then
+        modify( $v ) { setUbicacion_actual( $lab ) }
+        salida.add( "Minos, enojado con " + $v.nombre + ", lo envia al laberinto." );
+end
+
+rule "Minos envia al laberinto a los hijos de quien lo enoja"
+    no-loop true
+    when
+        $minos : Humano( nombre == "Minos" )
+        $lab : Ubicacion( nombre == "Laberinto del Minotauro" )
+        TieneEnojo( $madre : personaje, personajeEnojado == $minos )
+        Parentesco( padreOMadre == $madre, $hijo : hijo )
+        $v : Personaje( this == $hijo, estado_vida == true, ubicacion_actual != $lab )
+    then
+        modify( $v ) { setUbicacion_actual( $lab ) }
+        salida.add( "Minos envia tambien al laberinto a " + $v.nombre + ", hijo de " + $madre.nombre + "." );
+end
+
+rule "Ariadna entrega su hilo a un heroe enviado al laberinto"
+    no-loop true
+    salience 20
+    when
+        $ariadna : Heroe( nombre == "Ariadna" )
+        $hilo : Objeto( nombre == "Hilo de Ariadna" )
+        $t : TieneObjeto( personaje == $ariadna, objeto == $hilo )
+        $lab : Ubicacion( nombre == "Laberinto del Minotauro" )
+        $h : Personaje( this != $ariadna, estado_vida == true, estado_libertad == true, ubicacion_actual == $lab )
+        eval( $h instanceof Heroe || $h instanceof Semidios )
+    then
+        delete( $t );
+        insert( new TieneObjeto( $h, $hilo ) );
+        salida.add( "Ariadna entrega el Hilo de Ariadna a " + $h.nombre + ", enviado al laberinto." );
+end
+
+rule "El Minotauro apresa a quien entra en el laberinto sin el hilo de Ariadna"
+    no-loop true
+    salience 10
+    when
+        $mino : Criatura( nombre == "Minotauro", estado_vida == true )
+        $lab : Ubicacion( nombre == "Laberinto del Minotauro" )
+        $hilo : Objeto( nombre == "Hilo de Ariadna" )
+        $v : Personaje( this != $mino, estado_vida == true, estado_libertad == true, ubicacion_actual == $lab )
+        not TieneObjeto( personaje == $v, objeto == $hilo )
+    then
+        modify( $v ) { setEstado_libertad( false ) }
+        Apresar $a = new Apresar();
+        $a.setSujeto( $mino );
+        insert( $a );
+        insert( new AccionDestinoPersonaje( $a, $v ) );
+        salida.add( "El Minotauro apresa a " + $v.nombre + " por entrar en el laberinto sin el Hilo de Ariadna." );
+end
+
+rule "Un heroe con el hilo de Ariadna localiza al Minotauro"
+    no-loop true
+    when
+        $lab : Ubicacion( nombre == "Laberinto del Minotauro" )
+        $h : Personaje( estado_vida == true, estado_libertad == true, ubicacion_actual == $lab )
+        eval( $h instanceof Heroe || $h instanceof Semidios )
+        $hilo : Objeto( nombre == "Hilo de Ariadna" )
+        TieneObjeto( personaje == $h, objeto == $hilo )
+        $mino : Criatura( nombre == "Minotauro", estado_vida == true )
+        not ( Localizar( $l : this, sujeto == $h ) and AccionDestinoPersonaje( accion == $l, destino == $mino ) )
+    then
+        Localizar $loc = new Localizar();
+        $loc.setSujeto( $h );
+        insert( $loc );
+        insert( new AccionDestinoPersonaje( $loc, $mino ) );
+        salida.add( $h.nombre + " recorre el laberinto guiado por el Hilo de Ariadna y localiza al Minotauro." );
+end
                  

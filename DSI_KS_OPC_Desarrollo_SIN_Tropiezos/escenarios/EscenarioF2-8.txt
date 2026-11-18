@@ -1,3 +1,4 @@
-# Escenario libre de ejemplo: Heracles intenta obtener la capacidad Vuelo.
-PREGUNTA CAPACIDAD Heracles Vuelo
-POSEE Heracles Alas_de_Icaro
+# Mito propio: Minos envia al laberinto a Casiopea, a su hija Andromeda y a Teseo
+PREGUNTA LIBERAR Teseo Andromeda
+ENOJO Casiopea Minos
+ENOJO Teseo Minos

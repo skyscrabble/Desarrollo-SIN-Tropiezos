@@ -1,4 +1,4 @@
-; Thu Nov 19 10:17:31 CET 2026
+; Thu Nov 19 16:55:29 CET 2026
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -220,3 +220,51 @@
 	(%3APAL-NAME "ObjetoUnicoPoseedor")
 	(%3APAL-RANGE "(defrange ?p1 :FRAME Personaje)\n(defrange ?p2 :FRAME Personaje)\n(defrange ?obj :FRAME Objeto)")
 	(%3APAL-STATEMENT "(forall ?p1\n        (forall ?p2\n                (forall ?obj\n                        (=> (and (posee_objeto ?p1 ?obj)\n                                 (posee_objeto ?p2 ?obj))\n                            (= ?p1 ?p2))\n                )\n        )\n)"))
+
+([mitologia_Class40002] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "DedaloFabricaAlas")
+	(%3APAL-STATEMENT "(Predicate)"))
+
+([mitologia_Class40003] of  %3APAL-CONSTRAINT
+
+	(%3APAL-NAME "DedaloFabricaAlas")
+	(%3APAL-STATEMENT "(Predicate)"))
+
+([mitologia_Class40005] of  Fabricar
+
+	(destino [mitologia_Class40008])
+	(sujeto [mitologia_Class40007]))
+
+([mitologia_Class40006] of  Escapar
+
+	(destino [mitologia_Class40009])
+	(sujeto [mitologia_Class40010]))
+
+([mitologia_Class40007] of  Humano
+
+	(nombre "Dedalo"))
+
+([mitologia_Class40008] of  Objeto
+
+	(nombre "Alas"))
+
+([mitologia_Class40009] of  Humano
+
+	(nombre "Minos"))
+
+([mitologia_Class40010] of  Humano
+
+	(nombre "Dedalo"))
+
+([mitologia_Class40011] of  Capacidad
+
+	(nombre "Arma"))
+
+([mitologia_Class40012] of  Capacidad
+
+	(nombre "Petrificar"))
+
+([mitologia_Class40013] of  Capacidad
+
+	(nombre "Fuerza"))

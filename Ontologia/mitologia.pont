@@ -1,4 +1,4 @@
-; Thu Nov 19 10:17:31 CET 2026
+; Thu Nov 19 16:55:29 CET 2026
 ; 
 ;+ (version "3.4.8")
 ;+ (build "Build 629")
@@ -7,16 +7,16 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
-	(multislot tiene_capacidad
-;+		(comment "Relación que asocia a un Personaje con una o varias habilidades especiales activas.")
-		(type INSTANCE)
-;+		(allowed-classes Capacidad)
-		(create-accessor read-write))
 	(single-slot estado_vida
 ;+		(comment "Propiedad que indica el estado vital actual de la entidad (true == vivo, false == muerto)")
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot tiene_capacidad
+;+		(comment "Relación que asocia a un Personaje con una o varias habilidades especiales activas.")
+		(type INSTANCE)
+;+		(allowed-classes Capacidad)
 		(create-accessor read-write))
 	(multislot tiene_favor
 ;+		(comment "Relación que representa que un Personaje cuenta con la simpatía, bendición o ayuda de uno o varios Dioses.")
@@ -105,16 +105,16 @@
 		(type INSTANCE)
 ;+		(allowed-classes Objeto)
 		(create-accessor read-write))
+	(single-slot nombre
+;+		(comment "Identificador de texto único para nombrar al elemento, personaje o acción de la ontología.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot estado_libertad
 ;+		(comment "Propiedad que determina si un personaje goza de libre movimiento (true) o se encuentra apresado (false).")
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot nombre
-;+		(comment "Identificador de texto único para nombrar al elemento, personaje o acción de la ontología.")
-		(type STRING)
-;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot ubicacion_actual
 ;+		(comment "Relación que vincula a un Personaje u Objeto con el lugar físico donde se encuentra en este momento.")
@@ -127,16 +127,16 @@
 		(type INSTANCE)
 ;+		(allowed-classes Personaje)
 		(create-accessor read-write))
-	(multislot tiene_capacidad
-;+		(comment "Relación que asocia a un Personaje con una o varias habilidades especiales activas.")
-		(type INSTANCE)
-;+		(allowed-classes Capacidad)
-		(create-accessor read-write))
 	(single-slot estado_vida
 ;+		(comment "Propiedad que indica el estado vital actual de la entidad (true == vivo, false == muerto)")
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot tiene_capacidad
+;+		(comment "Relación que asocia a un Personaje con una o varias habilidades especiales activas.")
+		(type INSTANCE)
+;+		(allowed-classes Capacidad)
 		(create-accessor read-write)))
 
 (defclass Humano "Representación de un personaje humano o mortal. Extraído del enunciado del proyecto de practicas."
@@ -167,16 +167,16 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(multislot otorga_capacidad
+;+		(comment "Capacidad que entrega la posesión de un objeto.")
+		(type INSTANCE)
+;+		(allowed-classes Capacidad)
+		(create-accessor read-write))
 	(single-slot ubicacion_actual
 ;+		(comment "Relación que vincula a un Personaje u Objeto con el lugar físico donde se encuentra en este momento.")
 		(type INSTANCE)
 ;+		(allowed-classes Ubicacion)
 ;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot otorga_capacidad
-;+		(comment "Capacidad que entrega la posesión de un objeto.")
-		(type INSTANCE)
-;+		(allowed-classes Capacidad)
 		(create-accessor read-write)))
 
 (defclass Capacidad "Representa un poder o habilidad relevante para el desarrollo del mito. No se modela cada una de las subcapacidades concretas, sino que se modelan como atributo de Capacidad."
@@ -230,5 +230,13 @@
 	(role concrete))
 
 (defclass Localizar "Acción de encontrar la ubicación exacta de un personaje, objeto o criatura para poder interactuar con él."
+	(is-a Accion)
+	(role concrete))
+
+(defclass Fabricar "Accion en la que un personaje construye un objeto a partir de otros (Dedalo fabrica las alas con cera y plumas)."
+	(is-a Accion)
+	(role concrete))
+
+(defclass Escapar "Accion en la que un personaje abandona un lugar donde estaba preso (Dedalo escapa del laberinto)."
 	(is-a Accion)
 	(role concrete))

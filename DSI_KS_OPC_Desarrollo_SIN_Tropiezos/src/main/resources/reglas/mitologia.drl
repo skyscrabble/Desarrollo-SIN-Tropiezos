@@ -516,7 +516,7 @@ rule "Minos envia al laberinto a los hijos de quien lo enoja"
         $v : Personaje( this == $hijo, estado_vida == true, ubicacion_actual != $lab )
     then
         modify( $v ) { setUbicacion_actual( $lab ) }
-        salida.add( "Minos envia tambien al laberinto a " + $v.nombre + ", hijo de " + $madre.nombre + "." );
+        salida.add( "Minos envia tambien al laberinto a " + $v.nombre + ", descendiente de " + $madre.nombre + "." );
 end
 
 rule "Ariadna entrega su hilo a un heroe enviado al laberinto"

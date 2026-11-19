@@ -4,7 +4,7 @@ Minos, enojado con Teseo, lo envia al laberinto.
 Ariadna entrega el Hilo de Ariadna a Teseo, enviado al laberinto.
 Minos, enojado con Casiopea, lo envia al laberinto.
 El Minotauro apresa a Casiopea por entrar en el laberinto sin el Hilo de Ariadna.
-Minos envia tambien al laberinto a Andromeda, hijo de Casiopea.
+Minos envia tambien al laberinto a Andromeda, descendiente de Casiopea.
 El Minotauro apresa a Andromeda por entrar en el laberinto sin el Hilo de Ariadna.
 Teseo recorre el laberinto guiado por el Hilo de Ariadna y localiza al Minotauro.
 Teseo se adentra en el laberinto y mata al Minotauro.

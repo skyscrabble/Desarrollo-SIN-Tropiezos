@@ -76,8 +76,8 @@ public class Main {
             session.getAgenda().getAgendaGroup("Informacion Inicial").setFocus();
             session.fireAllRules();
 
-            Path destino = carpetaSoluciones.resolve(
-                    "Respuesta" + nombre.replaceFirst("^Escenario", ""));
+            String sufijo = nombre.replaceFirst("^Escenario", "").replace('-', '_');
+            Path destino = carpetaSoluciones.resolve("Respuesta" + sufijo);
             escribirRespuesta(destino, mision, salida);
         } finally {
             session.dispose();

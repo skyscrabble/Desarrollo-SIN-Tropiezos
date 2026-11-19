@@ -1,0 +1,35 @@
+Si, Perseo puede liberar a Andromeda debido a que:
+Teseo obtiene la capacidad Arma debido a tener Espada de Teseo.
+Ceto queda libre debido al enojo de Poseidon hacia Casiopea.
+Andromeda queda presa debido a estar Ceto libre.
+Heracles se adentra en el laberinto y mata al Minotauro.
+Heracles obtiene Cuerno del Minotauro debido a matar a Minotauro.
+Heracles obtiene la capacidad Fuerza debido a tener Cuerno del Minotauro.
+Heracles obtiene la capacidad Arma debido a tener Cuerno del Minotauro.
+Heracles obtiene Cabeza de Minotauro debido a matar a Minotauro.
+Heracles libera a Perseo debido a matar a Minotauro.
+Perseo obtiene Escudo de Bronce debido a tener el favor de Atenea.
+Perseo obtiene Hoz de Acero debido a tener el favor de Hermes.
+Perseo obtiene la capacidad Arma debido a tener Hoz de Acero.
+Perseo obtiene Brida de Oro debido a tener el favor de Hefesto.
+Perseo obtiene Yelmo de Hades debido a tener el favor de Hades.
+Perseo obtiene la capacidad Invisibilidad debido a tener Yelmo de Hades.
+Perseo localiza a las Grayas debido a tener el favor de Hermes y Atenea.
+Perseo roba el Ojo de las Grayas debido a tener Invisibilidad y las Grayas localizadas.
+Perseo localiza a las Ninfas debido a intercambiar el Ojo de las Grayas con las Grayas.
+Perseo obtiene Zurron Magico debido a tener a las Ninfas localizadas.
+Perseo obtiene Sandalias Aladas debido a tener a las Ninfas localizadas.
+Perseo obtiene la capacidad Vuelo debido a tener Sandalias Aladas.
+Perseo obtiene Escudo Espejo debido a tener el favor de Hefesto y el Escudo de Bronce.
+Perseo obtiene la capacidad Espejo debido a tener Escudo Espejo.
+Perseo mata a Medusa debido a tener Vuelo, Invisibilidad, Espejo y Arma.
+Perseo obtiene Cabeza de Medusa debido a matar a Medusa.
+Perseo obtiene la capacidad Petrificar debido a tener Cabeza de Medusa.
+Perseo mata a Ceto debido a tener la capacidad Petrificar.
+Perseo obtiene Cabeza de Ceto debido a matar a Ceto.
+Perseo libera a Andromeda debido a matar a Ceto.
+Minos, enfadado por la muerte del Minotauro, encierra a Dedalo y a Icaro en el laberinto.
+Dedalo fabrica las Alas de Dedalo y las Alas de Icaro con Cera de Abejas y Plumas de Aves.
+Icaro intenta escapar volando pero se acerca demasiado al sol y muere; las Alas de Icaro quedan donde cae.
+Dedalo utiliza sus alas para escapar del laberinto.
+Mision cumplida: Perseo libera a Andromeda

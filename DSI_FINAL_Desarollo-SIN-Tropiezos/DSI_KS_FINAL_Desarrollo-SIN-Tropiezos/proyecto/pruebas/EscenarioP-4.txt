@@ -1,0 +1,12 @@
+# Anillo, espejo de mano y conjuro en lugar del Yelmo, el Escudo Espejo y las Sandalias
+PREGUNTA LIBERAR Perseo Andromeda
+FAVOR Perseo Atenea
+FAVOR Perseo Hermes
+FAVOR Perseo Hefesto
+ENOJO Casiopea Poseidon
+NO_POSEE Atenea Escudo_de_Bronce
+NO_POSEE Hades Yelmo_de_Hades
+NO_POSEE Ninfas Sandalias_Aladas
+POSEE Perseo Anillo_de_Invisibilidad
+POSEE Perseo Espejo_de_Mano
+POSEE Perseo Conjuro_de_Vuelo

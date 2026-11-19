@@ -1,0 +1,17 @@
+Si, Teseo puede matar a Minotauro debido a que:
+Teseo obtiene la capacidad Arma debido a tener Espada de Teseo.
+Minos, enojado con Teseo, lo envia al laberinto.
+Ariadna entrega el Hilo de Ariadna a Teseo, enviado al laberinto.
+Teseo recorre el laberinto guiado por el Hilo de Ariadna y localiza al Minotauro.
+Teseo se adentra en el laberinto y mata al Minotauro.
+Teseo obtiene Cuerno del Minotauro debido a matar a Minotauro.
+Teseo obtiene la capacidad Fuerza debido a tener Cuerno del Minotauro.
+Teseo obtiene la capacidad Arma debido a tener Cuerno del Minotauro.
+Teseo obtiene Cabeza de Minotauro debido a matar a Minotauro.
+Minos, enfadado por la muerte del Minotauro, encierra a Dedalo y a Icaro en el laberinto.
+Dedalo fabrica las Alas de Dedalo y las Alas de Icaro con Cera de Abejas y Plumas de Aves.
+Icaro intenta escapar volando pero se acerca demasiado al sol y muere; las Alas de Icaro quedan donde cae.
+Dedalo utiliza sus alas para escapar del laberinto.
+Teseo recoge las Alas de Icaro, caidas junto al cuerpo de Icaro.
+Teseo obtiene la capacidad Vuelo debido a tener Alas de Icaro.
+Mision cumplida: Teseo mata a Minotauro

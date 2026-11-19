@@ -1,0 +1,4 @@
+# Mito propio: Minos envia al laberinto a Casiopea, a su hija Andromeda y a Teseo
+PREGUNTA LIBERAR Teseo Andromeda
+ENOJO Casiopea Minos
+ENOJO Teseo Minos
